@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/headintTopMargin"
+            android:fontFamily="@font/roboto"
+            android:text="Schedule Meeting"
+            android:textColor="@color/headingTextColor"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto"
+            android:text="Name"
+            android:textColor="#C4C4CC"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/Nrupul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto"
+            android:text="Nrupul Dev"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <View
+            android:id="@+id/line_1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/Nrupul"
+            android:background="#C4C4C4" />
+
+
+        <TextView
+            android:id="@+id/date"
+            style="@style/style2"
+            android:layout_below="@id/line_1"
+            android:text="@string/tue_22_december_2020" />
+
+        <TextView
+            style="@style/style2"
+            android:layout_below="@id/line_1"
+            android:layout_toRightOf="@id/date"
+            android:text="@string/_11_30am" />
+
+        <TextView
+            android:id="@+id/invite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date"
+            android:layout_marginTop="10dp"
+            android:text="People to invite"
+            android:textSize="20dp" />
+
+
+        <TextView
+            android:id="@+id/prateek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/invite"
+            android:layout_marginTop="15dp"
+            android:drawableRight="@drawable/search_icon"
+            android:fontFamily="@font/roboto"
+            android:text="Prateek"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <View
+            android:id="@+id/line_2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/prateek"
+            android:background="#C4C4C4" />
+
+        <ImageView
+            android:id="@+id/prateekPhoto"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/line_2"
+            android:layout_margin="10dp"
+            android:src="@drawable/prateek" />
+
+        <ImageView
+            android:id="@+id/jeffPhoto"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/line_2"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/prateekPhoto"
+            android:src="@drawable/jeff" />
+
+        <View
+            android:id="@+id/line_3"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/prateekPhoto"
+            android:layout_marginTop="21dp"
+            android:background="#C4C4C4" />
+
+        <ImageView
+            android:id="@+id/prateekLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line_3"
+            android:layout_margin="10dp"
+            android:src="@drawable/prateek" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line_3"
+
+            android:layout_alignBottom="@id/prateekLogo"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/prateekLogo"
+            android:drawableRight="@drawable/verify"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:text="Prateek Shukla"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/jeffLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/prateekLogo"
+            android:layout_margin="10dp"
+            android:src="@drawable/jeff" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/prateekLogo"
+            android:layout_alignBottom="@id/jeffLogo"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/jeffLogo"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:text="Jeff bezos"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/prateekLogo"
+            android:layout_alignBottom="@id/prateekLogo"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:text="\@PratShukla" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/jeffLogo"
+            android:layout_alignBottom="@id/jeffLogo"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:text="\@Jefbezoz" />
+
+        <View
+            android:id="@+id/line_4"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/jeffLogo"
+            android:layout_marginTop="20dp"
+            android:background="#C4C4C4" />
+
+        <TextView
+            android:id="@+id/notify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line_4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:drawableRight="@drawable/slack_icon"
+            android:fontFamily="@font/roboto"
+            android:text="Notify people on Slack ?   "
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="italic" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notify"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#8095FF"
+            android:fontFamily="@font/roboto"
+            android:paddingVertical="15dp"
+            android:text="Create Meeting"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+</ScrollView>
